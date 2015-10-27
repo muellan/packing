@@ -1,0 +1,10 @@
+#PACKING
+#CONTAINER
+Sphere
+1
+3  0 0 0
+#CONTENT
+Sphere
+2
+1  -2 0 0
+2  1 0 0

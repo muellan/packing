@@ -1,0 +1,11 @@
+#PACKING
+#CONTAINER
+Disk
+1
+5 0 0
+#CONTENT
+Disk
+3
+1 1 3
+2 3 0
+3 -2 0
