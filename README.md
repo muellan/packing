@@ -10,6 +10,7 @@ Some of the solutions are also listed on Eckard Specht's excellent website www.p
  * n : number of items
  * i : item index in range [1,n]
  * i = 0 : container index
+ * containers will ususally be placed at the origin and aligned to the coordinate system axes
 
 
 ## Inventory
