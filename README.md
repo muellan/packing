@@ -94,7 +94,7 @@ min-Sphere(Sphere): spheres in smallest enclosing sphere
   | ```qw qx qy qz``` | orientation quaternion (qw: scalar part)                             |
 
 
-#### Simple Entity Types
+#### Simple 2D Entity Types
 2 dimensions
 | type            | description                      | specification       |
 | --------------- | ----------------------------     | ---------------     |
@@ -106,7 +106,7 @@ min-Sphere(Sphere): spheres in smallest enclosing sphere
 | RegularPolygon  | regular n-gon                    | ```r      x y   ``` |
 | Capsule2d       | rectangle with hemicircular caps | ```r h    x y   ``` |
 
-3 dimensions
+#### Simple 3D Entity Types
 | type               | description                      | specification                      |
 | ---------------    | ----------------------------     | ---------------                    |
 | Sphere             | sphere                           | ```r         x y z             ``` |
@@ -117,7 +117,7 @@ min-Sphere(Sphere): spheres in smallest enclosing sphere
 | RegularTetrahedron | regular tetrahedron              | ```r         x y z             ``` |
 | Capsule            | cylinder with hemispherical caps | ```r h       x y z             ``` |
 
-4 or more dimensions
+#### Simple Entity Types (more than 3 dimensions)
 | type            | description                  | specification      |
 | --------------- | ---------------------------- | ---------------    |
 | HyperSphere4d   | 4-dimensional sphere         | ```r  x y z a  ``` |
@@ -125,7 +125,7 @@ min-Sphere(Sphere): spheres in smallest enclosing sphere
 
 
 #### Complex Entity Types
-* Polygon: non-convex, closed polygon with m points and m edges (orientation: ccw) 
+* Polygon: planar, closed and possibly non-convex polygon with m points and m edges (orientation: ccw) 
   ```
   <number of points m>
   <point 1>
