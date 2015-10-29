@@ -4,6 +4,13 @@ This repository contains my personal (putative/quasi-optimum) solutions for some
 
 Some of the solutions are also listed on Eckard Specht's excellent website www.packomania.com. He has nice pictures, shortest tours of the items and a contact anlysis for each packing. Note that he uses a different file format and normalizes most of the container sizes to 1.
 
+#### Conventions
+ * items : objects to be packed
+ * container : object(s) enclosing the items
+ * n : number of items
+ * i : item index in range [1,n]
+ * i = 0 : container index
+
 
 ## Inventory
 
@@ -32,25 +39,13 @@ min-Sphere(Sphere): spheres in smallest enclosing sphere
 
 
 
-## Conventions
-
-
-### Terms, Symbols, etc.
-
- * items : objects to be packed
- * container : object(s) enclosing the items
- * n : number of items
- * i : item index in range [1,n]
- * i = 0 : container index
-
-
-### File Format
+## File Format
 * the encoding is ASCII, multibyte characters must not be used
 * line endings are expected to be LF only
 * whitespace apart from LF does not have any semantic meaning
 
 
-#### Simple Packing File Format (.pac)
+### Simple Packing File Format (.pac)
 ```
 #PACKING
 #CONTAINER
@@ -67,7 +62,7 @@ min-Sphere(Sphere): spheres in smallest enclosing sphere
 ```
 
 
-#### Simple Packing Input File Format (.shp)
+### Simple Packing Input File Format (.shp)
 ```
 <entity-type>
 <number of entities n>
@@ -77,7 +72,7 @@ min-Sphere(Sphere): spheres in smallest enclosing sphere
 <entity-specification n>
 ```
 
-#### Entity Specifications
+### Entity Specifications
 * ```entity-specification```: ```shape-specification``` ```placing```
 * ```placing```:              ```position``` ```orientation``` ```scaling```
 * ```position```:             ```center``` ```coordinates x, y, z, a, b, ...```
@@ -152,7 +147,7 @@ min-Sphere(Sphere): spheres in smallest enclosing sphere
 | $file // $placing | name of .shp file and transformation | ```filename``` // ```placing``` |
 
 
-#### Examples
+### Examples
 * A packing solution file for the min-Disk(Disk) problem:
   ```
   #PACKING
