@@ -95,7 +95,6 @@ min-Sphere(Sphere): spheres in smallest enclosing sphere
 
 
 #### Simple 2D Entity Types
-2 dimensions
 | type            | description                      | specification       |
 | --------------- | ----------------------------     | ---------------     |
 | Disk            | circle                           | ```r      x y   ``` |
