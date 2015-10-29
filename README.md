@@ -134,6 +134,17 @@ min-Sphere(Sphere): spheres in smallest enclosing sphere
   x y  p
   ```
 
+* TriangleCompound: collection of triangles "triangle soup"
+  ```
+  <number of triangles m>
+  <point 1-a> <point 1-b> <point 1-c>
+  <point 2-a> <point 2-b> <point 2-c>
+  ...
+  <point m-a> <point m-b> <point m-c>
+  x y z  qw qx qy qz
+  ```
+
+
 #### Special Entity Types
 | type              | description                          | specification                   |
 | ------------      | ----------------------------         | ---------------                 |
