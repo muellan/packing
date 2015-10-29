@@ -19,6 +19,7 @@ Some of the solutions are also listed on Eckard Specht's excellent website www.p
 ### 2D Benchmark Instances
 
 * min-Disk(Disk): circles in smallest enclosing circle
+  * r(i) = 1, n=1-600
   * r(i) = i ("Al Zimmermann's contest set"), n=1-200
   * r(i) = i ^ (+1/2), n=1-100
   * r(i) = i ^ (-1/2), n=1-100
