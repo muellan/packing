@@ -45,7 +45,7 @@ min-Sphere(Sphere): spheres in smallest enclosing sphere
 * whitespace apart from LF does not have any semantic meaning
 
 
-### Simple Packing File Format (.pac)
+### Packing File Format (.pac)
 ```
 #PACKING
 #CONTAINER
@@ -62,7 +62,7 @@ min-Sphere(Sphere): spheres in smallest enclosing sphere
 ```
 
 
-### Simple Packing Input File Format (.shp)
+### Packing Input File Format (.shp)
 ```
 <entity-type>
 <number of entities n>
