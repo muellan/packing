@@ -1,0 +1,12 @@
+#PACKING
+#CONTAINER
+SquareAA
+1
+2  0 0
+#CONTENT
+Disk
+4
+1  1 1
+1  -1 -1
+1  1 -1
+1  -1 1
