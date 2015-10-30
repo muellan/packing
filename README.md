@@ -11,7 +11,7 @@ Some of the solutions are also listed on Eckard Specht's excellent website www.p
  * i : item index in range [1,n]
  * i = 0 : container index
  * containers will ususally be placed at the origin and aligned to the coordinate system axes
-
+  
 
 ## Inventory
 
@@ -21,21 +21,25 @@ Some of the solutions are also listed on Eckard Specht's excellent website www.p
 * min-Disk(Disk): circles in smallest enclosing circle
   * r(i) = 1, n=1-600
   * r(i) = i ("Al Zimmermann's contest set"), n=1-200
-  * r(i) = i ^ (+1/2), n=1-100
-  * r(i) = i ^ (-1/2), n=1-100
-  * r(i) = i ^ (-2/3), n=1-100
-  * r(i) = i ^ (-1/5), n=1-100
+  * r(i) = i ^ (+1/2), n=5-100
+  * r(i) = i ^ (-1/2), n=5-100
+  * r(i) = i ^ (-2/3), n=5-100
+  * r(i) = i ^ (-1/5), n=5-100
 
 * min-Square(Disk): circles in smallest enclosing square
   * r(i) = 1, n=1-100
   * r(i) = i, n=1-100
-  * r(i) = i ^ (+1/2), n=1-100
-  * r(i) = i ^ (-1/2), n=1-100
+  * r(i) = i ^ (+1/2), n=5-100
+  * r(i) = i ^ (-1/2), n=5-100
 
 
 ### 3D Benchmark Instances
+  
+* min-Sphere(Sphere): spheres in smallest enclosing sphere
+  * r(i) = 1, n=1-100
+  * r(i) = i, n=1-100
 
-min-Sphere(Sphere): spheres in smallest enclosing sphere
+* min-Cube(Sphere): spheres in smallest enclosing cube
   * r(i) = 1, n=1-100
   * r(i) = i, n=1-100
 
@@ -77,7 +81,7 @@ min-Sphere(Sphere): spheres in smallest enclosing sphere
 #### Entity Specification
 * ```entity-specification```: ```shape-specification``` ```placing```
 * ```placing```: ```position``` ```orientation``` ```scaling```
-* ```position```: ```center``` ```coordinates x, y, z, a, b, ...```
+* ```position```: ```center coordinates x, y, z, a, b, ...```
 * ```orientation```: ```angle between local and global x-axis``` or ```unit quaternion```
 
 #### Shape Specification Parts
