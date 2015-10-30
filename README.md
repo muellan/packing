@@ -74,23 +74,21 @@ min-Sphere(Sphere): spheres in smallest enclosing sphere
 <entity-specification n>
 ```
 
-#### Entity Specifications
+#### Entity Specification
 * ```entity-specification```: ```shape-specification``` ```placing```
+* ```shape-specification```:
+| symbol            | description                              |
+| ----------------- | ---------------------------------------- |
+| ```r          ``` | radius                                   |
+| ```h          ``` | half length                              |
+| ```l          ``` | full length                              |
+| ```hx         ``` | half length on axis x                    |
+| ```lx         ``` | full length on axis x                    |
+| ```p          ``` | angle (local x, global x) in degrees     |
+| ```qw qx qy qz``` | orientation quaternion (qw: scalar part) |
 * ```placing```: ```position``` ```orientation``` ```scaling```
 * ```position```: ```center``` ```coordinates x, y, z, a, b, ...```
 * ```orientation```: ```angle between local and global x-axis``` or ```unit quaternion```
-
-
-#### Shape Specification
-  | symbol            | description                              |
-  | ----------------- | ---------------------------------------- |
-  | ```r          ``` | radius                                   |
-  | ```h          ``` | half length                              |
-  | ```l          ``` | full length                              |
-  | ```hx         ``` | half length on axis x                    |
-  | ```lx         ``` | full length on axis x                    |
-  | ```p          ``` | angle (local x, global x) in degrees     |
-  | ```qw qx qy qz``` | orientation quaternion (qw: scalar part) |
 
 
 #### Simple 2D Entity Types
