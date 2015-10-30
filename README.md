@@ -76,21 +76,22 @@ min-Sphere(Sphere): spheres in smallest enclosing sphere
 
 ### Entity Specifications
 * ```entity-specification```: ```shape-specification``` ```placing```
-  | symbol            | description                                                          |
-  | ---               | ---                                                                  |
-  | ```r          ``` | radius                                                               |
-  | ```h          ``` | half length                                                          |
-  | ```l          ``` | full length                                                          |
-  | ```hx         ``` | half length on axis x                                                |
-  | ```lx         ``` | full length on axis x                                                |
-  | ```p          ``` | angle between local and global x-axis (counter-clockwise) in degrees |
-  | ```qw qx qy qz``` | orientation quaternion (qw: scalar part)                             |
-* ```placing```:              ```position``` ```orientation``` ```scaling```
-* ```position```:             ```center``` ```coordinates x, y, z, a, b, ...```
-* ```orientation```:          ```angle between local and global x-axis``` or ```unit quaternion```
+* ```placing```: ```position``` ```orientation``` ```scaling```
+* ```position```: ```center``` ```coordinates x, y, z, a, b, ...```
+* ```orientation```: ```angle between local and global x-axis``` or ```unit quaternion```
 * ```shape-specification```:
+  | symbol            | description                              |
+  | ---               | ---                                      |
+  | ```r          ``` | radius                                   |
+  | ```h          ``` | half length                              |
+  | ```l          ``` | full length                              |
+  | ```hx         ``` | half length on axis x                    |
+  | ```lx         ``` | full length on axis x                    |
+  | ```p          ``` | angle (local x, global x) in degrees     |
+  | ```qw qx qy qz``` | orientation quaternion (qw: scalar part) |
 
-#### Simple 2D Entity Types
+
+### Simple 2D Entity Types
 | type            | description                      | specification       |
 | --------------- | ----------------------------     | ---------------     |
 | Disk            | circle                           | ```r      x y   ``` |
@@ -101,7 +102,7 @@ min-Sphere(Sphere): spheres in smallest enclosing sphere
 | RegularPolygon  | regular n-gon                    | ```r      x y   ``` |
 | Capsule2d       | rectangle with hemicircular caps | ```r h    x y   ``` |
 
-#### Simple 3D Entity Types
+### Simple 3D Entity Types
 | type               | description                      | specification                      |
 | ---------------    | ----------------------------     | ---------------                    |
 | Sphere             | sphere                           | ```r         x y z             ``` |
@@ -112,14 +113,14 @@ min-Sphere(Sphere): spheres in smallest enclosing sphere
 | RegularTetrahedron | regular tetrahedron              | ```r         x y z             ``` |
 | Capsule            | cylinder with hemispherical caps | ```r h       x y z             ``` |
 
-#### Simple Entity Types (more than 3 dimensions)
+### Simple Entity Types (more than 3 dimensions)
 | type            | description                  | specification      |
 | --------------- | ---------------------------- | ---------------    |
 | HyperSphere4d   | 4-dimensional sphere         | ```r  x y z a  ``` |
 | HyperSphere5d   | 5-dimensional sphere         | ```r  x y z a b``` |
 
 
-#### Complex Entity Types
+### Complex Entity Types
 * Polygon: planar, closed and possibly non-convex polygon with m points and m edges (orientation: ccw) 
   ```
   <number of points m>
@@ -141,12 +142,12 @@ min-Sphere(Sphere): spheres in smallest enclosing sphere
   ```
 
 
-#### Special Entity Types
+### Special Entity Types
 | type              | description                          | specification                   |
 | ------------      | ----------------------------         | ---------------                 |
 | $file             | name of .shp file                    | ```filename```                  |
 | $file // $placing | name of .shp file and transformation | ```filename``` // ```placing``` |
-
+  
 
 ### Examples
 * A packing solution file for the min-Disk(Disk) problem:
