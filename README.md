@@ -51,6 +51,10 @@ Some of the solutions are also listed on Eckard Specht's excellent website www.p
   * r(i) = 1, n=1-100
   * r(i) = i, n=1-100
 
+* min-Cuboid(Sphere): spheres in smallest enclosing cuboid
+  * r(i) = 1, n=1-100
+  * r(i) = i, n=1-100
+
 
 
 ## File Format
