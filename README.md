@@ -4,6 +4,7 @@ This repository contains my personal (putative/quasi-optimum) solutions for some
 
 Some of the solutions are also listed on Eckard Specht's excellent website www.packomania.com. He has nice pictures, shortest tours of the items and a contact anlysis for each packing. Note that he uses a different file format and normalizes most of the container sizes to 1.
 
+
 #### Conventions
  * items : objects to be packed
  * container : object(s) enclosing the items
@@ -11,7 +12,14 @@ Some of the solutions are also listed on Eckard Specht's excellent website www.p
  * i : item index in range [1,n]
  * i = 0 : container index
  * containers will ususally be placed at the origin and aligned to the coordinate system axes
-  
+
+
+#### Scenario / Folder Names
+ * find smallest container for set of items:
+   "min-ContainerType(ItemType)"
+ * find legal arrangement of items in rigid container:
+   "ContainerType(ItemType)"
+
 
 ## Inventory
 
@@ -79,33 +87,42 @@ Some of the solutions are also listed on Eckard Specht's excellent website www.p
 ```
 
 #### Entity Specification
-* ```entity-specification```: ```shape-specification``` ```placing```
-* ```placing```: ```position``` ```orientation``` ```scaling```
-* ```position```: ```center coordinates x, y, z, a, b, ...```
-* ```orientation```: ```angle between local and global x-axis``` or ```unit quaternion```
+* ```entity-specification``` : ```shape-specification``` ```placing```
+* ```placing``` : ```position``` ```orientation``` ```scaling```
+* ```position``` : ```center coordinates x, y, z, a, b, ...```
+* ```orientation`` `: ```angle between local and global x-axis``` or ```unit quaternion```
+* ```scaling``` : ```scaling factors sx, sy, sz, sa, sb, ...```
 
-#### Shape Specification Parts
-| symbol            | description                              |
-| ----------------- | ---------------------------------------- |
-| ```r          ``` | radius                                   |
-| ```h          ``` | half length                              |
-| ```l          ``` | full length                              |
-| ```hx         ``` | half length on axis x                    |
-| ```lx         ``` | full length on axis x                    |
-| ```p          ``` | angle (local x, global x) in degrees     |
-| ```qw qx qy qz``` | orientation quaternion (qw: scalar part) |
+
+#### Shape Specification
+| symbol   | description           |
+| -------- | --------------------- |
+| ```r```  | radius                |
+| ```h```  | half length           |
+| ```l```  | full length           |
+| ```hx``` | half length on axis x |
+| ```lx``` | full length on axis x |
+
+
+#### Shape Placing
+| symbol                            | description                              |
+| -----------------                 | ---------------------------------------- |
+| ```x```, ```y```, ```z```, ...    | x,y,z...-coordinate of the local origin  |
+| ```p```                           | angle (local x, global x) in degrees     |
+| ```qw qx qy qz```                 | orientation quaternion (qw: scalar part) |
+| ```sx```, ```sy```, ```sz```, ... | scaling along x,y,z...-axis              |
 
 
 #### Simple 2D Entity Types
-| type            | description                      | specification       |
-| --------------- | ----------------------------     | ---------------     |
-| Disk            | circle                           | ```r      x y   ``` |
-| SquareAA        | axis-aligned square              | ```h      x y   ``` |
-| Square          | freely rotatable square          | ```h      x y  p``` |
-| Rectangle       | axis-aligned rectangle           | ```hx hy  x y   ``` |
-| RectangleAA     | freely rotatable rectangle       | ```hx hy  x y  p``` |
-| RegularPolygon  | regular n-gon                    | ```r      x y   ``` |
-| Capsule2d       | rectangle with hemicircular caps | ```r h    x y   ``` |
+| type                  | description                      | specification       |
+| ---------------       | ----------------------------     | ---------------     |
+| Disk / Circle         | circle                           | ```r      x y   ``` |
+| SquareAA              | axis-aligned square              | ```h      x y   ``` |
+| Square                | freely rotatable square          | ```h      x y  p``` |
+| RectangleAA / Box2dAA | axis-aligned rectangle           | ```hx hy  x y   ``` |
+| Rectangle / Box2d     | freely rotatable rectangle       | ```hx hy  x y  p``` |
+| RegularPolygon        | regular n-gon                    | ```r      x y   ``` |
+| Capsule2d             | rectangle with hemicircular caps | ```r h    x y   ``` |
 
 #### Simple 3D Entity Types
 | type               | description                      | specification                      |
@@ -113,8 +130,8 @@ Some of the solutions are also listed on Eckard Specht's excellent website www.p
 | Sphere             | sphere                           | ```r         x y z             ``` |
 | CubeAA             | axis-aligned cube                | ```h         x y z             ``` |
 | Cube               | freely rotatable cube            | ```h         x y z  qw qx qy qz``` |
-| CuboidAA           | axis-aligned cuboid              | ```hx hy hz  x y z             ``` |
-| Cuboid             | freely rotatable cuboid          | ```hx hy hz  x y z  qw qx qy qz``` |
+| CuboidAA / Box3dAA | axis-aligned cuboid              | ```hx hy hz  x y z             ``` |
+| Cuboid / Box3d     | freely rotatable cuboid          | ```hx hy hz  x y z  qw qx qy qz``` |
 | RegularTetrahedron | regular tetrahedron              | ```r         x y z             ``` |
 | Capsule            | cylinder with hemispherical caps | ```r h       x y z             ``` |
 
