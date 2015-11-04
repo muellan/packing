@@ -94,7 +94,7 @@ Some of the solutions are also listed on Eckard Specht's excellent website www.p
 * ```entity-specification``` : ```shape-specification``` ```placing```
 * ```placing``` : ```position``` ```orientation``` ```scaling```
 * ```position``` : ```center coordinates x, y, z, a, b, ...```
-* ```orientation`` `: ```angle between local and global x-axis``` or ```unit quaternion```
+* ```orientation``` : ```angle between local and global x-axis``` or ```unit quaternion```
 * ```scaling``` : ```scaling factors sx, sy, sz, sa, sb, ...```
 
 
