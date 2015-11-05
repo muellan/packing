@@ -42,8 +42,8 @@ Some of the solutions are also listed on Eckard Specht's excellent website www.p
   * r(i) = i ^ (-1/2), n=5-100
 
 * min-Rectangle(Disk): circles in smallest enclosing rectangle
-  * h(i) = 1, n=1-100
-  * h(i) = i, n=1-100
+  * r(i) = 1, n=1-100
+  * r(i) = i, n=1-100
 
 * min-Square(Square): squares in smallest enclosing square
   * h(i) = 1, n=1-100
