@@ -11,7 +11,8 @@ Some of the solutions are also listed on Eckard Specht's excellent website www.p
  * n : number of items
  * i : item index in range [1,n]
  * i = 0 : container index
- * containers will ususally be placed at the origin and aligned to the coordinate system axes
+ * Containers are centered at the global origin and aligned to the coordinate system axes.
+ * Symbols referring to container properties start with an uppercase letter.
 
 
 #### Scenario / Folder Names
@@ -40,6 +41,14 @@ Some of the solutions are also listed on Eckard Specht's excellent website www.p
   * r(i) = i ^ (+1/2), n=5-100
   * r(i) = i ^ (-1/2), n=5-100
 
+* min-Rectangle(Disk): circles in smallest enclosing rectangle
+  * h(i) = 1, n=1-100
+  * h(i) = i, n=1-100
+
+* min-Square(Square): squares in smallest enclosing square
+  * h(i) = 1, n=1-100
+  * h(i) = i, n=1-100
+
 
 ### 3D Benchmark Instances
   
@@ -54,6 +63,10 @@ Some of the solutions are also listed on Eckard Specht's excellent website www.p
 * min-Cuboid(Sphere): spheres in smallest enclosing cuboid
   * r(i) = 1, n=1-100
   * r(i) = i, n=1-100
+
+* min-Cube(Cube): cubes in smallest enclosing cube
+  * h(i) = 1, n=1-100
+  * h(i) = i, n=1-100
 
 
 
@@ -112,7 +125,7 @@ Some of the solutions are also listed on Eckard Specht's excellent website www.p
 | symbol                            | description                              |
 | -----------------                 | ---------------------------------------- |
 | ```x```, ```y```, ```z```, ...    | x,y,z...-coordinate of the local origin  |
-| ```p```                           | angle (local x, global x) in degrees     |
+| ```p```                           | angle (local x, global x) in radians     |
 | ```qw qx qy qz```                 | orientation quaternion (qw: scalar part) |
 | ```sx```, ```sy```, ```sz```, ... | scaling along x,y,z...-axis              |
 
