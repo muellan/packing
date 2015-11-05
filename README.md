@@ -64,9 +64,14 @@ Some of the solutions are also listed on Eckard Specht's excellent website www.p
   * r(i) = 1, n=1-100
   * r(i) = i, n=1-100
 
-* min-Cube(Cube): cubes in smallest enclosing cube
-  * h(i) = 1, n=1-100
-  * h(i) = i, n=1-100
+
+### 4D & 5D Benchmark Instances
+
+* min-Sphere4d(Sphere4d): 4d hyperspheres in smallest enclosing 4d hypersphere
+  * r(i) = 1, n=10,20,30,40,50,100
+
+* min-Sphere4d(Sphere4d): 4d hyperspheres in smallest enclosing 4d hypersphere
+  * r(i) = 1, n=10,20,30,40,50,100
 
 
 

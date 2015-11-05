@@ -1,0 +1,10 @@
+#PACKING
+#CONTAINER
+SquareAA
+1
+2  0 0
+#CONTENT
+Square
+2
+1  -1 0 0
+1  1 0 0
