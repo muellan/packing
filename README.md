@@ -87,7 +87,7 @@ You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
 ## File Format
 * the encoding is ASCII, multibyte characters must not be used
 * line endings are expected to be LF only
-* whitespace apart from LF does not have any semantic meaning
+* whitespace apart from LF does not have any semantic meaning other than separating numbers or identifier texts
 
 
 ### Packing File Format (.pac)
