@@ -49,6 +49,13 @@ Some of the solutions are also listed on Eckard Specht's excellent website www.p
   * h(i) = 1, n=1-100
   * h(i) = i, n=1-100
 
+* min-Rectangle(RectangleAA): axis-oriented rectangles in smallest enclosing rectangle
+  * hx(i)=i, hy(i)=0.750*i, n=1-100
+  * hx(i)=i, hy(i)=0.500*i, n=1-100
+  * hx(i)=i, hy(i)=0.250*i, n=1-100
+  * hx(i)=i, hy(i)=0.125*i, n=1-100
+
+
 
 ### 3D Benchmark Instances
   
