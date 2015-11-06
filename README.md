@@ -79,7 +79,7 @@ You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
 * min-Sphere4d(Sphere4d): 4d hyperspheres in smallest enclosing 4d hypersphere
   * r(i) = i, n=10,20,30,40,50,100
 
-* min-Sphere4d(Sphere4d): 4d hyperspheres in smallest enclosing 4d hypersphere
+* min-Sphere5d(Sphere5d): 5d hyperspheres in smallest enclosing 5d hypersphere
   * r(i) = i, n=10,20,30,40,50,100
 
 
