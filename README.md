@@ -136,12 +136,12 @@ You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
 
 
 #### Shape Placing
-| symbol                            | description                              |
-| -----------------                 | ---------------------------------------- |
-| ```x```, ```y```, ```z```, ...    | x,y,z...-coordinate of the local origin  |
-| ```p```                           | angle (local x, global x) in radians     |
-| ```qw qx qy qz```                 | orientation quaternion (qw: scalar part) |
-| ```sx```, ```sy```, ```sz```, ... | scaling along x,y,z...-axis              |
+| symbol                            | description                                   |
+| -----------------                 | ----------------------------------------      |
+| ```x```, ```y```, ```z```, ...    | x,y,z...-coordinate of the local origin       |
+| ```p```                           | angle(local x, global x) ccw in radians       |
+| ```qw qx qy qz```                 | orientation unit quaternion (qw: scalar part) |
+| ```sx```, ```sy```, ```sz```, ... | scaling along x,y,z...-axis                   |
 
 
 #### Simple 2D Entity Types
