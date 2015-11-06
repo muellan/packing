@@ -145,32 +145,32 @@ You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
 
 
 #### Simple 2D Entity Types
-| type                  | description                      | specification       |
-| ---------------       | ----------------------------     | ---------------     |
-| Disk / Circle         | circle                           | ```r      x y   ``` |
-| SquareAA              | axis-aligned square              | ```h      x y   ``` |
-| Square                | freely rotatable square          | ```h      x y  p``` |
-| RectangleAA / Box2dAA | axis-aligned rectangle           | ```hx hy  x y   ``` |
-| Rectangle / Box2d     | freely rotatable rectangle       | ```hx hy  x y  p``` |
-| RegularPolygon        | regular n-gon                    | ```r      x y   ``` |
-| Capsule2d             | rectangle with hemicircular caps | ```r h    x y   ``` |
+| type                  | description                      | specification                  |
+| ---------------       | ----------------------------     | ---------------                |
+| Disk / Circle         | circle                           | ```r```      ```x y```         |
+| SquareAA              | axis-aligned square              | ```h```      ```x y```         |
+| Square                | freely rotatable square          | ```h```      ```x y``` ```p``` |
+| RectangleAA / Box2dAA | axis-aligned rectangle           | ```hx hy```  ```x y```         |
+| Rectangle / Box2d     | freely rotatable rectangle       | ```hx hy```  ```x y``` ```p``` |
+| RegularPolygon        | regular n-gon                    | ```r```      ```x y```         |
+| Capsule2d             | rectangle with hemicircular caps | ```r h```    ```x y```         |
 
 #### Simple 3D Entity Types
-| type               | description                      | specification                      |
-| ---------------    | ----------------------------     | ---------------                    |
-| Sphere             | sphere                           | ```r         x y z             ``` |
-| CubeAA             | axis-aligned cube                | ```h         x y z             ``` |
-| Cube               | freely rotatable cube            | ```h         x y z  qw qx qy qz``` |
-| CuboidAA / Box3dAA | axis-aligned cuboid              | ```hx hy hz  x y z             ``` |
-| Cuboid / Box3d     | freely rotatable cuboid          | ```hx hy hz  x y z  qw qx qy qz``` |
-| RegularTetrahedron | regular tetrahedron              | ```r         x y z             ``` |
-| Capsule            | cylinder with hemispherical caps | ```r h       x y z             ``` |
+| type               | description                      | specification                                |
+| ---------------    | ----------------------------     | ---------------                              |
+| Sphere             | sphere                           | ```r```        ```x y z```                   |
+| CubeAA             | axis-aligned cube                | ```h```        ```x y z```                   |
+| Cube               | freely rotatable cube            | ```h```        ```x y z``` ```qw qx qy qz``` |
+| CuboidAA / Box3dAA | axis-aligned cuboid              | ```hx hy hz``` ```x y z```                   |
+| Cuboid / Box3d     | freely rotatable cuboid          | ```hx hy hz``` ```x y z``` ```qw qx qy qz``` |
+| RegularTetrahedron | regular tetrahedron              | ```r```        ```x y z```                   |
+| Capsule            | cylinder with hemispherical caps | ```r h```      ```x y z```                   |
 
 #### Simple Entity Types (more than 3 dimensions)
-| type            | description                  | specification      |
-| --------------- | ---------------------------- | ---------------    |
-| HyperSphere4d   | 4-dimensional sphere         | ```r  x y z a  ``` |
-| HyperSphere5d   | 5-dimensional sphere         | ```r  x y z a b``` |
+| type            | description                  | specification           |
+| --------------- | ---------------------------- | ---------------         |
+| HyperSphere4d   | 4-dimensional sphere         | ```r``` ```x y z a  ``` |
+| HyperSphere5d   | 5-dimensional sphere         | ```r``` ```x y z a b``` |
 
 
 #### Complex Entity Types
