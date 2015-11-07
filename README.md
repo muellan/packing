@@ -57,7 +57,7 @@ You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
   * hx(i)=i, hy(i)=0.250*i, n=1-100
   * hx(i)=i, hy(i)=0.125*i, n=1-100
 
-* min-Rectangle(RectangleAA): freely rotatable rectangles in smallest enclosing rectangle
+* min-Rectangle(Rectangle): freely rotatable rectangles in smallest enclosing rectangle
   * hx(i)=i, hy(i)=0.750*i, n=1-100
   * hx(i)=i, hy(i)=0.500*i, n=1-100
   * hx(i)=i, hy(i)=0.250*i, n=1-100
