@@ -1,6 +1,6 @@
 #PACKING
 #CONTAINER
-Box3dAA
+CuboidAA
 1
 1 1 1 0 0 0
 #CONTENT

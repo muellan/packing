@@ -1,0 +1,10 @@
+#PACKING
+#CONTAINER
+Circle
+1
+3 0 0
+#CONTENT
+Circle
+2
+1 2 0
+2 -1 0

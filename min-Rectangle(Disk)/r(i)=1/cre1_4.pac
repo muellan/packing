@@ -1,9 +1,0 @@
-#PACKING
-#CONTAINER
-Box2dAA
-1
-1 1  0 0
-#CONTENT
-Disk
-2
-1  0 0

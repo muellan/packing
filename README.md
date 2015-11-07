@@ -29,7 +29,7 @@ You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
 
 ### 2D Benchmark Instances
 
-* min-Disk(Disk): circles in smallest enclosing circle
+* min-Circle(Circle): circles in smallest enclosing circle
   * r(i) = 1, n=1-600
   * r(i) = i ("Al Zimmermann's contest set"), n=1-200
   * r(i) = i ^ (+1/2), n=5-100
@@ -37,17 +37,17 @@ You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
   * r(i) = i ^ (-2/3), n=5-100
   * r(i) = i ^ (-1/5), n=5-100
 
-* min-Square(Disk): circles in smallest enclosing square
+* min-Square(Circle): circles in smallest enclosing square
   * r(i) = 1, n=1-100
   * r(i) = i, n=1-100
   * r(i) = i ^ (+1/2), n=5-100
   * r(i) = i ^ (-1/2), n=5-100
 
-* min-Rectangle(Disk): circles in smallest enclosing rectangle
+* min-Rectangle(Circle): circles in smallest enclosing rectangle
   * r(i) = 1, n=1-100
   * r(i) = i, n=1-100
 
-* min-Square(Square): squares in smallest enclosing square
+* min-Square(Square): freely rotatable squares in smallest enclosing square
   * h(i) = 1, n=1-100
   * h(i) = i, n=1-100
 
@@ -57,6 +57,11 @@ You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
   * hx(i)=i, hy(i)=0.250*i, n=1-100
   * hx(i)=i, hy(i)=0.125*i, n=1-100
 
+* min-Rectangle(RectangleAA): freely rotatable rectangles in smallest enclosing rectangle
+  * hx(i)=i, hy(i)=0.750*i, n=1-100
+  * hx(i)=i, hy(i)=0.500*i, n=1-100
+  * hx(i)=i, hy(i)=0.250*i, n=1-100
+  * hx(i)=i, hy(i)=0.125*i, n=1-100
 
 
 ### 3D Benchmark Instances
@@ -145,15 +150,15 @@ You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
 
 
 #### Simple 2D Entity Types
-| type                  | description                      | specification                  |
-| ---------------       | ----------------------------     | ---------------                |
-| Disk / Circle         | circle                           | ```r```      ```x y```         |
-| SquareAA              | axis-aligned square              | ```h```      ```x y```         |
-| Square                | freely rotatable square          | ```h```      ```x y``` ```p``` |
-| RectangleAA / Box2dAA | axis-aligned rectangle           | ```hx hy```  ```x y```         |
-| Rectangle / Box2d     | freely rotatable rectangle       | ```hx hy```  ```x y``` ```p``` |
-| RegularPolygon        | regular n-gon                    | ```r```      ```x y```         |
-| Capsule2d             | rectangle with hemicircular caps | ```r h```    ```x y```         |
+| type            | description                      | specification                  |
+| --------------- | ----------------------------     | ---------------                |
+| Circle          | circle                           | ```r```      ```x y```         |
+| SquareAA        | axis-aligned square              | ```h```      ```x y```         |
+| Square          | freely rotatable square          | ```h```      ```x y``` ```p``` |
+| RectangleAA     | axis-aligned rectangle           | ```hx hy```  ```x y```         |
+| Rectangle       | freely rotatable rectangle       | ```hx hy```  ```x y``` ```p``` |
+| RegularPolygon  | regular n-gon                    | ```r```      ```x y```         |
+| Capsule2d       | rectangle with hemicircular caps | ```r h```    ```x y```         |
 
 #### Simple 3D Entity Types
 | type               | description                      | specification                                |
@@ -161,8 +166,8 @@ You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
 | Sphere             | sphere                           | ```r```        ```x y z```                   |
 | CubeAA             | axis-aligned cube                | ```h```        ```x y z```                   |
 | Cube               | freely rotatable cube            | ```h```        ```x y z``` ```qw qx qy qz``` |
-| CuboidAA / Box3dAA | axis-aligned cuboid              | ```hx hy hz``` ```x y z```                   |
-| Cuboid / Box3d     | freely rotatable cuboid          | ```hx hy hz``` ```x y z``` ```qw qx qy qz``` |
+| CuboidAA           | axis-aligned cuboid              | ```hx hy hz``` ```x y z```                   |
+| Cuboid             | freely rotatable cuboid          | ```hx hy hz``` ```x y z``` ```qw qx qy qz``` |
 | RegularTetrahedron | regular tetrahedron              | ```r```        ```x y z```                   |
 | Capsule            | cylinder with hemispherical caps | ```r h```      ```x y z```                   |
 
@@ -203,15 +208,15 @@ You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
   
 
 ### Examples
-* A packing solution file for the min-Disk(Disk) problem:
+* A packing solution file for the min-Circle(Circle) problem:
   ```
   #PACKING
   #CONTAINER
-  Disk
+  Circle
   1
   5  0 0
   #CONTENT
-  Disk
+  Circle
   3
   1  1 3
   2  3 0
