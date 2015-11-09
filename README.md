@@ -78,6 +78,10 @@ You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
   * r(i) = 1, n=1-100
   * r(i) = i, n=1-100
 
+* min-Cube(Cube): cubes in smallest enclosing cube
+  * h(i) = 1, n=1-100
+  * h(i) = i, n=1-100
+
 
 ### 4D & 5D Benchmark Instances
 

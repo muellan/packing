@@ -1,0 +1,9 @@
+#PACKING
+#CONTAINER
+CubeAA
+1
+1  0 0 0
+#CONTENT
+Cube
+1
+1  0 0 0  1 0 0 0
