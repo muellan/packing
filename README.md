@@ -87,11 +87,11 @@ You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
   * h(i) = i, n=1-100
 
 * min-Cuboid(Cuboid): cuboids in smallest cuboid
-  * h_4x3x2  "box":    hx(i)=i, hy(i)=0.75*i,  hz(i)=0.5*i,   n=1-100
-  * h_4x2x1  "brick":  hx(i)=i, hy(i)=0.5*i,   hz(i)=0.25*i,  n=1-100
-  * h_10x5x1 "plate":  hx(i)=i, hy(i)=0.5*i,   hz(i)=0.1*i,   n=1-100
-  * h_8x1x1  "pole":   hx(i)=i, hy(i)=0.125*i, hz(i)=0.125*i, n=1-100
-  * AM cuboid set 1: n=1-100
+  * h_4x3x2  "box":    hx(i)=i, hy(i)=0.75*i,  hz(i)=0.5*i,   n=2-100
+  * h_4x2x1  "brick":  hx(i)=i, hy(i)=0.5*i,   hz(i)=0.25*i,  n=2-100
+  * h_10x5x1 "plate":  hx(i)=i, hy(i)=0.5*i,   hz(i)=0.1*i,   n=2-100
+  * h_8x1x1  "pole":   hx(i)=i, hy(i)=0.125*i, hz(i)=0.125*i, n=2-100
+  * AM cuboid set 1: n=2-100
 
 
 ### 4D & 5D Benchmark Instances
