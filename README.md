@@ -156,12 +156,12 @@ You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
 
 
 #### Shape Placing
-| symbol                            | description                                   |
-| -----------------                 | ----------------------------------------      |
-| ```x```, ```y```, ```z```, ...    | x,y,z...-coordinate of the local origin       |
-| ```p```                           | angle(local x, global x) ccw in radians       |
-| ```qw qx qy qz```                 | orientation unit quaternion (qw: scalar part) |
-| ```sx```, ```sy```, ```sz```, ... | scaling along x,y,z...-axis                   |
+| symbol                            | description                                            |
+| -----------------                 | ----------------------------------------               |
+| ```x```, ```y```, ```z```, ...    | x,y,z...-coordinate of the local origin                |
+| ```p```                           | angle(local x, global x), counter-clockwise in radians |
+| ```qw qx qy qz```                 | orientation unit quaternion (qw: scalar part)          |
+| ```sx```, ```sy```, ```sz```, ... | scaling along x,y,z...-axis                            |
 
 
 #### Simple 2D Entity Types
@@ -173,7 +173,7 @@ You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
 | RectangleAA     | axis-aligned rectangle           | ```hx hy```  ```x y```         |
 | Rectangle       | freely rotatable rectangle       | ```hx hy```  ```x y``` ```p``` |
 | RegularPolygon  | regular n-gon                    | ```r```      ```x y```         |
-| Capsule2d       | rectangle with hemicircular caps | ```r h```    ```x y```         |
+| Capsule2d       | rectangle with semicircular caps | ```r h```    ```x y```         |
 
 #### Simple 3D Entity Types
 | type               | description                      | specification                                |
