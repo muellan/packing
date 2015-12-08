@@ -200,8 +200,8 @@ You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
 | Cube               | freely rotatable cube            | ```h```        ```x y z``` ```qw qx qy qz``` |
 | CuboidAA           | axis-aligned cuboid              | ```hx hy hz``` ```x y z```                   |
 | Cuboid             | freely rotatable cuboid          | ```hx hy hz``` ```x y z``` ```qw qx qy qz``` |
-| RegularTetrahedron | regular tetrahedron              | ```r```        ```x y z```                   |
-| Capsule            | cylinder with hemispherical caps | ```r h```      ```x y z```                   |
+| RegularTetrahedron | regular tetrahedron              | ```r```        ```x y z``` ```qw qx qy qz``` |
+| Capsule            | cylinder with hemispherical caps | ```r h```      ```x y z``` ```qw qx qy qz``` |
 
 #### Simple Entity Types (more than 3 dimensions)
 | type            | description                  | specification           |
