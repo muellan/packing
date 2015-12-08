@@ -22,8 +22,6 @@ You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
    "min-ContainerType(ItemType)"
  * find legal arrangement of items in a rigid container:
    "ContainerType(ItemType)"
- * find densest arrangement of items (picked from a repository) in a rigid container:
-   "ContainerType(????ItemType)"
 
 
 ## Inventory
@@ -39,19 +37,33 @@ You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
   * r(i) = i ^ (-2/3), n=5-100
   * r(i) = i ^ (-1/5), n=5-100
 
+* min-Circle(ConvexRegularPolygon): convex regular polygon in smallest enclosing circle
+  * RegularTriangle: r(i) = 1, n=2-100
+  * RegularTriangle: r(i) = i, n=2-100
+  * RegularPentagon: r(i) = 1, n=2-100
+  * RegularPentagon: r(i) = i, n=2-100
+  * RegularHexagon: r(i) = 1, n=2-100
+  * RegularHexagon: r(i) = i, n=2-100
+  * RegularOctagon: r(i) = 1, n=2-100
+  * RegularOctagon: r(i) = i, n=2-100
+
 * min-Square(Circle): circles in smallest enclosing square
   * r(i) = 1, n=1-100
   * r(i) = i, n=1-100
   * r(i) = i ^ (+1/2), n=5-100
   * r(i) = i ^ (-1/2), n=5-100
 
-* min-Rectangle(Circle): circles in smallest enclosing rectangle
-  * r(i) = 1, n=1-100
-  * r(i) = i, n=1-100
-
 * min-Square(Square): freely rotatable squares in smallest enclosing square
   * h(i) = 1, n=1-100
   * h(i) = i, n=1-100
+
+* min-Square(ConvexRegularPolygon): convex regular polygon in smallest enclosing square
+  * RegularTriangle: r(i) = 1, n=2-100
+  * RegularTriangle: r(i) = i, n=2-100
+
+* min-Rectangle(Circle): circles in smallest enclosing rectangle
+  * r(i) = 1, n=1-100
+  * r(i) = i, n=1-100
 
 * min-Rectangle(RectangleAA): axis-oriented rectangles in smallest enclosing rectangle
   * hx(i)=i, hy(i)=0.750*i, n=1-100
@@ -167,15 +179,19 @@ You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
 
 
 #### Simple 2D Entity Types
-| type            | description                      | specification                  |
-| --------------- | ----------------------------     | ---------------                |
-| Circle          | circle                           | ```r```      ```x y```         |
-| SquareAA        | axis-aligned square              | ```h```      ```x y```         |
-| Square          | freely rotatable square          | ```h```      ```x y``` ```p``` |
-| RectangleAA     | axis-aligned rectangle           | ```hx hy```  ```x y```         |
-| Rectangle       | freely rotatable rectangle       | ```hx hy```  ```x y``` ```p``` |
-| RegularPolygon  | regular n-gon                    | ```r```      ```x y```         |
-| Capsule2d       | rectangle with semicircular caps | ```r h```    ```x y```         |
+| type            | description                           | specification                  |
+| --------------- | ----------------------------          | ---------------                |
+| Circle          | circle                                | ```r```      ```x y```         |
+| SquareAA        | axis-aligned square                   | ```h```      ```x y```         |
+| Square          | freely rotatable square               | ```h```      ```x y``` ```p``` |
+| RegularTriangle | freely rotatable equilateral triangle | ```h```      ```x y``` ```p``` |
+| RegularPentagon | freely rotatable regular pentagon     | ```h```      ```x y``` ```p``` |
+| RegularHexagon  | freely rotatable regular hexagon      | ```h```      ```x y``` ```p``` |
+| RegularOctagon  | freely rotatable regular octagon      | ```h```      ```x y``` ```p``` |
+| RectangleAA     | axis-aligned rectangle                | ```hx hy```  ```x y```         |
+| Rectangle       | freely rotatable rectangle            | ```hx hy```  ```x y``` ```p``` |
+| RegularPolygon  | regular n-gon                         | ```r```      ```x y```         |
+| Capsule2d       | rectangle with semicircular caps      | ```r h```    ```x y```         |
 
 #### Simple 3D Entity Types
 | type               | description                      | specification                                |
