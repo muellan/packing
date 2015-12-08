@@ -18,10 +18,12 @@ You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
 
 
 #### Scenario / Folder Names
- * find smallest container for set of items:
+ * find smallest container for a set of items:
    "min-ContainerType(ItemType)"
- * find legal arrangement of items in rigid container:
+ * find legal arrangement of items in a rigid container:
    "ContainerType(ItemType)"
+ * find densest arrangement of items (picked from a repository) in a rigid container:
+   "ContainerType(????ItemType)"
 
 
 ## Inventory
