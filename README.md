@@ -184,10 +184,10 @@ You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
 | Circle          | circle                                | ```r```      ```x y```         |
 | SquareAA        | axis-aligned square                   | ```h```      ```x y```         |
 | Square          | freely rotatable square               | ```h```      ```x y``` ```p``` |
-| RegularTriangle | freely rotatable equilateral triangle | ```h```      ```x y``` ```p``` |
-| RegularPentagon | freely rotatable regular pentagon     | ```h```      ```x y``` ```p``` |
-| RegularHexagon  | freely rotatable regular hexagon      | ```h```      ```x y``` ```p``` |
-| RegularOctagon  | freely rotatable regular octagon      | ```h```      ```x y``` ```p``` |
+| RegularTriangle | freely rotatable equilateral triangle | ```r```      ```x y``` ```p``` |
+| RegularPentagon | freely rotatable regular pentagon     | ```r```      ```x y``` ```p``` |
+| RegularHexagon  | freely rotatable regular hexagon      | ```r```      ```x y``` ```p``` |
+| RegularOctagon  | freely rotatable regular octagon      | ```r```      ```x y``` ```p``` |
 | RectangleAA     | axis-aligned rectangle                | ```hx hy```  ```x y```         |
 | Rectangle       | freely rotatable rectangle            | ```hx hy```  ```x y``` ```p``` |
 | RegularPolygon  | regular n-gon                         | ```r```      ```x y```         |
