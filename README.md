@@ -60,6 +60,12 @@ You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
 * min-Square(ConvexRegularPolygon): convex regular polygon in smallest enclosing square
   * RegularTriangle: r(i) = 1, n=2-100
   * RegularTriangle: r(i) = i, n=2-100
+  * RegularPentagon: r(i) = 1, n=2-100
+  * RegularPentagon: r(i) = i, n=2-100
+  * RegularHexagon: r(i) = 1, n=2-100
+  * RegularHexagon: r(i) = i, n=2-100
+  * RegularOctagon: r(i) = 1, n=2-100
+  * RegularOctagon: r(i) = i, n=2-100
 
 * min-Rectangle(Circle): circles in smallest enclosing rectangle
   * r(i) = 1, n=1-100
