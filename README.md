@@ -65,59 +65,59 @@ You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
 | min-Circle        | RegularHexagon  | r(i) = i                  | 2 - 100 |                               |
 | min-Circle        | RegularOctagon  | r(i) = 1                  | 2 - 100 |                               |
 | min-Circle        | RegularOctagon  | r(i) = i                  | 2 - 100 |                               |
-| min-Square        | Circle          | r(i) = 1                  | 1-100   |                               |
-| min-Square        | Circle          | r(i) = i                  | 1-100   |                               |
-| min-Square        | Circle          | r(i) = i ^ (+1/2)         | 5-100   |                               |
-| min-Square        | Circle          | r(i) = i ^ (-1/2)         | 5-100   |                               |
-| min-Square        | Square          | h(i) = 1                  | 1-100   |                               |
-| min-Square        | Square          | h(i) = i                  | 1-100   |                               |
-| min-Square        | RegularTriangle | r(i) = 1                  | 2-100   |                               |
-| min-Square        | RegularTriangle | r(i) = i                  | 2-100   |                               |
-| min-Square        | RegularPentagon | r(i) = 1                  | 2-100   |                               |
-| min-Square        | RegularPentagon | r(i) = i                  | 2-100   |                               |
-| min-Square        | RegularHexagon  | r(i) = 1                  | 2-100   |                               |
-| min-Square        | RegularHexagon  | r(i) = i                  | 2-100   |                               |
-| min-Square        | RegularOctagon  | r(i) = 1                  | 2-100   |                               |
-| min-Square        | RegularOctagon  | r(i) = i                  | 2-100   |                               |
-| min-Rectangle     | Circle          | r(i) = 1                  | 1-100   |                               |
-| min-Rectangle     | Circle          | r(i) = i                  | 1-100   |                               |
-| min-Rectangle     | RetangleAA      | hx(i)=i, hy(i)=0.750·i    | 1-100   |                               |
-| min-Rectangle     | RetangleAA      | hx(i)=i, hy(i)=0.500·i    | 1-100   |                               |
-| min-Rectangle     | RetangleAA      | hx(i)=i, hy(i)=0.250·i    | 1-100   |                               |
-| min-Rectangle     | RetangleAA      | hx(i)=i, hy(i)=0.125·i    | 1-100   |                               |
-| min-Rectangle     | Rectangle       | hx(i)=i, hy(i)=0.750·i    | 1-100   |                               |
-| min-Rectangle     | Rectangle       | hx(i)=i, hy(i)=0.500·i    | 1-100   |                               |
-| min-Rectangle     | Rectangle       | hx(i)=i, hy(i)=0.250·i    | 1-100   |                               |
-| min-Rectangle     | Rectangle       | hx(i)=i, hy(i)=0.125·i    | 1-100   |                               |
+| min-Square        | Circle          | r(i) = 1                  | 1 - 100 |                               |
+| min-Square        | Circle          | r(i) = i                  | 1 - 100 |                               |
+| min-Square        | Circle          | r(i) = i ^ (+1/2)         | 5 - 100 |                               |
+| min-Square        | Circle          | r(i) = i ^ (-1/2)         | 5 - 100 |                               |
+| min-Square        | Square          | h(i) = 1                  | 1 - 100 |                               |
+| min-Square        | Square          | h(i) = i                  | 1 - 100 |                               |
+| min-Square        | RegularTriangle | r(i) = 1                  | 2 - 100 |                               |
+| min-Square        | RegularTriangle | r(i) = i                  | 2 - 100 |                               |
+| min-Square        | RegularPentagon | r(i) = 1                  | 2 - 100 |                               |
+| min-Square        | RegularPentagon | r(i) = i                  | 2 - 100 |                               |
+| min-Square        | RegularHexagon  | r(i) = 1                  | 2 - 100 |                               |
+| min-Square        | RegularHexagon  | r(i) = i                  | 2 - 100 |                               |
+| min-Square        | RegularOctagon  | r(i) = 1                  | 2 - 100 |                               |
+| min-Square        | RegularOctagon  | r(i) = i                  | 2 - 100 |                               |
+| min-Rectangle     | Circle          | r(i) = 1                  | 1 - 100 |                               |
+| min-Rectangle     | Circle          | r(i) = i                  | 1 - 100 |                               |
+| min-Rectangle     | RetangleAA      | hx(i)=i, hy(i)=0.750·i    | 1 - 100 |                               |
+| min-Rectangle     | RetangleAA      | hx(i)=i, hy(i)=0.500·i    | 1 - 100 |                               |
+| min-Rectangle     | RetangleAA      | hx(i)=i, hy(i)=0.250·i    | 1 - 100 |                               |
+| min-Rectangle     | RetangleAA      | hx(i)=i, hy(i)=0.125·i    | 1 - 100 |                               |
+| min-Rectangle     | Rectangle       | hx(i)=i, hy(i)=0.750·i    | 1 - 100 |                               |
+| min-Rectangle     | Rectangle       | hx(i)=i, hy(i)=0.500·i    | 1 - 100 |                               |
+| min-Rectangle     | Rectangle       | hx(i)=i, hy(i)=0.250·i    | 1 - 100 |                               |
+| min-Rectangle     | Rectangle       | hx(i)=i, hy(i)=0.125·i    | 1 - 100 |                               |
 
 
 ### 3D Benchmark Instances
   
-| Container Type | Item Type       | Item Shape Distribution                | n       |                      |
-| -------------- | --------------- | -------------------------------------- | ------- | -------------------- |
-| min-Sphere     | Sphere          | r(i) = 1                               | 1 - 100 |                      |
-| min-Sphere     | Sphere          | r(i) = i                               | 1 - 100 |                      |
-| min-Cube       | Sphere          | r(i) = 1                               | 1 - 100 |                      |
-| min-Cube       | Sphere          | r(i) = i                               | 1 - 100 |                      |
-| min-Cube       | Cube            | h(i) = 1                               | 1 - 100 |                      |
-| min-Cube       | Cube            | h(i) = i                               | 1 - 100 |                      |
-| min-Cube       | CubeAA          | h(i) = 1                               | 1 - 100 |                      |
-| min-Cube       | CubeAA          | h(i) = i                               | 1 - 100 |                      |
-| min-Cuboid     | Sphere          | r(i) = 1                               | 1 - 100 |                      |
-| min-Cuboid     | Sphere          | r(i) = i                               | 1 - 100 |                      |
-| min-Cuboid     | Cuboid          | hx(i)=i, hy(i)=0.75·i,  hz(i)=0.5·i    | 2 - 100 | "boxes" 4 x 3 x 2    |
-| min-Cuboid     | Cuboid          | hx(i)=i, hy(i)=0.5·i,   hz(i)=0.25·i   | 2 - 100 | "bricks" 4 x 2 x 1   |
-| min-Cuboid     | Cuboid          | hx(i)=i, hy(i)=0.5·i,   hz(i)=0.1·i    | 2 - 100 | "plates" 10 x 5 x 1  |
-| min-Cuboid     | Cuboid          | hx(i)=i, hy(i)=0.125·i, hz(i)=0.125·i  | 2 - 100 | "poles" 8 x 1 x 1    |
-| min-Cuboid     | Cuboid          | AM cuboid set 1                        | 2 - 100 |                      |
+| Container Type | Item Type  | Item Shape Distribution                | n       |                     |
+| -------------- | ---------- | -------------------------------------- | ------- | ------------------- |
+| min-Sphere     | Sphere     | r(i) = 1                               | 1 - 100 |                     |
+| min-Sphere     | Sphere     | r(i) = i                               | 1 - 100 |                     |
+| min-Cube       | Sphere     | r(i) = 1                               | 1 - 100 |                     |
+| min-Cube       | Sphere     | r(i) = i                               | 1 - 100 |                     |
+| min-Cube       | Cube       | h(i) = 1                               | 1 - 100 |                     |
+| min-Cube       | Cube       | h(i) = i                               | 1 - 100 |                     |
+| min-Cube       | CubeAA     | h(i) = 1                               | 1 - 100 |                     |
+| min-Cube       | CubeAA     | h(i) = i                               | 1 - 100 |                     |
+| min-Cuboid     | Sphere     | r(i) = 1                               | 1 - 100 |                     |
+| min-Cuboid     | Sphere     | r(i) = i                               | 1 - 100 |                     |
+| min-Cuboid     | Cuboid     | hx(i)=i, hy(i)=0.75·i,  hz(i)=0.5·i    | 2 - 100 | "boxes"   4 x 3 x 2 |
+| min-Cuboid     | Cuboid     | hx(i)=i, hy(i)=0.5·i,   hz(i)=0.25·i   | 2 - 100 | "bricks"  4 x 2 x 1 |
+| min-Cuboid     | Cuboid     | hx(i)=i, hy(i)=0.5·i,   hz(i)=0.1·i    | 2 - 100 | "plates" 10 x 5 x 1 |
+| min-Cuboid     | Cuboid     | hx(i)=i, hy(i)=0.125·i, hz(i)=0.125·i  | 2 - 100 | "poles"   8 x 1 x 1 |
+| min-Cuboid     | Cuboid     | AM cuboid set 1                        | 2 - 100 |                     |
 
 
 ### 4D & 5D Benchmark Instances
 
-| Container Type | Item Type  | Item Shape Distribution  | n                    | 
-| -------------- | ---------- | ------------------------ | -------              | 
-| min-Sphere4d   | Sphere4d   | r(i) = i                 | n=10,20,30,40,50,100 | 
-| min-Sphere5d   | Sphere5d   | r(i) = i                 | n=10,20,30,40,50,100 | 
+| Container Type | Item Type  | Item Shape Distribution  | n                       | 
+| -------------- | ---------- | ------------------------ | ----------------------- | 
+| min-Sphere4d   | Sphere4d   | r(i) = i                 | 10, 20, 30, 40, 50, 100 | 
+| min-Sphere5d   | Sphere5d   | r(i) = i                 | 10, 20, 30, 40, 50, 100 | 
 
 
 
