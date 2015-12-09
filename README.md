@@ -24,103 +24,114 @@ You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
    "ContainerType(ItemType)"
 
 
+
 ## Inventory
+
+| Scenario                         | Description                                                 |
+| -------------------------------- | ----------------------------------------------------------- |
+| min-Circle(Circle)               | circles in smallest enclosing circle                        |
+| min-Circle(ConvexRegularPolygon) | convex regular polygon in smallest enclosing circle         |
+| min-Square(Circle)               | circles in smallest enclosing square                        |
+| min-Square(Square)               | freely rotatable squares in smallest enclosing square       |
+| min-Square(ConvexRegularPolygon) | convex regular polygon in smallest enclosing square         |
+| min-Rectangle(Circle)            | circles in smallest enclosing rectangle                     |
+| min-Rectangle(RectangleAA)       | axis-oriented rectangles in smallest enclosing rectangle    |
+| min-Rectangle(Rectangle)         | freely rotatable rectangles in smallest enclosing rectangle |
+| -------------------------------- | ----------------------------------------------------------- |
+| min-Sphere(Sphere)               | spheres in smallest enclosing sphere                        |
+| min-Cube(Sphere)                 | spheres in smallest enclosing cube                          |
+| min-Cuboid(Sphere)               | spheres in smallest enclosing cuboid                        |
+| min-Cube(Cube)                   | cubes in smallest enclosing cube                            |
+| min-Cube(CubeAA)                 | axis-aligned cubes in smallest enclosing cube               |
+| min-Cuboid(Cuboid)               | cuboids in smallest cuboid                                  |
+| -------------------------------- | ----------------------------------------------------------- |
+| min-Sphere4d(Sphere4d)           | 4d hyperspheres in smallest enclosing 4d hypersphere        |
+| min-Sphere5d(Sphere5d)           | 5d hyperspheres in smallest enclosing 5d hypersphere        |
 
 
 ### 2D Benchmark Instances
 
-* min-Circle(Circle): circles in smallest enclosing circle
-  * r(i) = 1, n=1-600
-  * r(i) = i ("Al Zimmermann's contest set"), n=1-200
-  * r(i) = i ^ (+1/2), n=5-100
-  * r(i) = i ^ (-1/2), n=5-100
-  * r(i) = i ^ (-2/3), n=5-100
-  * r(i) = i ^ (-1/5), n=5-100
-
-* min-Circle(ConvexRegularPolygon): convex regular polygon in smallest enclosing circle
-  * RegularTriangle: r(i) = 1, n=2-100
-  * RegularTriangle: r(i) = i, n=2-100
-  * RegularPentagon: r(i) = 1, n=2-100
-  * RegularPentagon: r(i) = i, n=2-100
-  * RegularHexagon: r(i) = 1, n=2-100
-  * RegularHexagon: r(i) = i, n=2-100
-  * RegularOctagon: r(i) = 1, n=2-100
-  * RegularOctagon: r(i) = i, n=2-100
-
-* min-Square(Circle): circles in smallest enclosing square
-  * r(i) = 1, n=1-100
-  * r(i) = i, n=1-100
-  * r(i) = i ^ (+1/2), n=5-100
-  * r(i) = i ^ (-1/2), n=5-100
-
-* min-Square(Square): freely rotatable squares in smallest enclosing square
-  * h(i) = 1, n=1-100
-  * h(i) = i, n=1-100
-
-* min-Square(ConvexRegularPolygon): convex regular polygon in smallest enclosing square
-  * RegularTriangle: r(i) = 1, n=2-100
-  * RegularTriangle: r(i) = i, n=2-100
-  * RegularPentagon: r(i) = 1, n=2-100
-  * RegularPentagon: r(i) = i, n=2-100
-  * RegularHexagon: r(i) = 1, n=2-100
-  * RegularHexagon: r(i) = i, n=2-100
-  * RegularOctagon: r(i) = 1, n=2-100
-  * RegularOctagon: r(i) = i, n=2-100
-
-* min-Rectangle(Circle): circles in smallest enclosing rectangle
-  * r(i) = 1, n=1-100
-  * r(i) = i, n=1-100
-
-* min-Rectangle(RectangleAA): axis-oriented rectangles in smallest enclosing rectangle
-  * hx(i)=i, hy(i)=0.750*i, n=1-100
-  * hx(i)=i, hy(i)=0.500*i, n=1-100
-  * hx(i)=i, hy(i)=0.250*i, n=1-100
-  * hx(i)=i, hy(i)=0.125*i, n=1-100
-
-* min-Rectangle(Rectangle): freely rotatable rectangles in smallest enclosing rectangle
-  * hx(i)=i, hy(i)=0.750*i, n=1-100
-  * hx(i)=i, hy(i)=0.500*i, n=1-100
-  * hx(i)=i, hy(i)=0.250*i, n=1-100
-  * hx(i)=i, hy(i)=0.125*i, n=1-100
+|      | Container Type | Item Type       | Item Shape Distribution   | n       |                               |
+| ---- | -------------- | --------------- | ------------------------- | ------- | ----------------------------- |
+| min- | Circle         | Circle          | r(i) = 1                  | 1 - 600 |                               |
+| min- | Circle         | Circle          | r(i) = i                  | 1 - 200 | "Al Zimmermann's contest set" |
+| min- | Circle         | Circle          | r(i) = i ^ (+1/2)         | 5 - 100 |                               |
+| min- | Circle         | Circle          | r(i) = i ^ (-1/2)         | 5 - 100 |                               |
+| min- | Circle         | Circle          | r(i) = i ^ (-2/3)         | 5 - 100 |                               |
+| min- | Circle         | Circle          | r(i) = i ^ (-1/5)         | 5 - 100 |                               |
+| ---- | -------------- | --------------- | ------------------------- | ------- | ----------------------------- |
+| min- | Circle         | RegularTriangle | r(i) = 1                  | 2 - 100 |                               |
+| min- | Circle         | RegularTriangle | r(i) = i                  | 2 - 100 |                               |
+| min- | Circle         | RegularPentagon | r(i) = 1                  | 2 - 100 |                               |
+| min- | Circle         | RegularPentagon | r(i) = i                  | 2 - 100 |                               |
+| min- | Circle         | RegularHexagon  | r(i) = 1                  | 2 - 100 |                               |
+| min- | Circle         | RegularHexagon  | r(i) = i                  | 2 - 100 |                               |
+| min- | Circle         | RegularOctagon  | r(i) = 1                  | 2 - 100 |                               |
+| min- | Circle         | RegularOctagon  | r(i) = i                  | 2 - 100 |                               |
+| ---- | -------------- | --------------- | ------------------------- | ------- | ----------------------------- |
+| min- | Square         | Circle          | r(i) = 1                  | 1-100   |                               |
+| min- | Square         | Circle          | r(i) = i                  | 1-100   |                               |
+| min- | Square         | Circle          | r(i) = i ^ (+1/2)         | 5-100   |                               |
+| min- | Square         | Circle          | r(i) = i ^ (-1/2)         | 5-100   |                               |
+| ---- | -------------- | --------------- | ------------------------- | ------- | ----------------------------- |
+| min- | Square         | Square          | h(i) = 1                  | 1-100   |                               |
+| min- | Square         | Square          | h(i) = i                  | 1-100   |                               |
+| ---- | -------------- | --------------- | ------------------------- | ------- | ----------------------------- |
+| min- | Square         | RegularTriangle | r(i) = 1                  | 2-100   |                               |
+| min- | Square         | RegularTriangle | r(i) = i                  | 2-100   |                               |
+| min- | Square         | RegularPentagon | r(i) = 1                  | 2-100   |                               |
+| min- | Square         | RegularPentagon | r(i) = i                  | 2-100   |                               |
+| min- | Square         | RegularHexagon  | r(i) = 1                  | 2-100   |                               |
+| min- | Square         | RegularHexagon  | r(i) = i                  | 2-100   |                               |
+| min- | Square         | RegularOctagon  | r(i) = 1                  | 2-100   |                               |
+| min- | Square         | RegularOctagon  | r(i) = i                  | 2-100   |                               |
+| ---- | -------------- | --------------- | ------------------------- | ------- | ----------------------------- |
+| min- | Rectangle      | Circle          | r(i) = 1                  | 1-100   |                               |
+| min- | Rectangle      | Circle          | r(i) = i                  | 1-100   |                               |
+| ---- | -------------- | --------------- | ------------------------- | ------- | ----------------------------- |
+| min- | Rectangle      | RetangleAA      | hx(i)=i, hy(i)=0.750·i    | 1-100   |                               |
+| min- | Rectangle      | RetangleAA      | hx(i)=i, hy(i)=0.500·i    | 1-100   |                               |
+| min- | Rectangle      | RetangleAA      | hx(i)=i, hy(i)=0.250·i    | 1-100   |                               |
+| min- | Rectangle      | RetangleAA      | hx(i)=i, hy(i)=0.125·i    | 1-100   |                               |
+| ---- | -------------- | --------------- | ------------------------- | ------- | ----------------------------- |
+| min- | Rectangle      | Rectangle       | hx(i)=i, hy(i)=0.750·i    | 1-100   |                               |
+| min- | Rectangle      | Rectangle       | hx(i)=i, hy(i)=0.500·i    | 1-100   |                               |
+| min- | Rectangle      | Rectangle       | hx(i)=i, hy(i)=0.250·i    | 1-100   |                               |
+| min- | Rectangle      | Rectangle       | hx(i)=i, hy(i)=0.125·i    | 1-100   |                               |
 
 
 ### 3D Benchmark Instances
   
-* min-Sphere(Sphere): spheres in smallest enclosing sphere
-  * r(i) = 1, n=1-100
-  * r(i) = i, n=1-100
-
-* min-Cube(Sphere): spheres in smallest enclosing cube
-  * r(i) = 1, n=1-100
-  * r(i) = i, n=1-100
-
-* min-Cuboid(Sphere): spheres in smallest enclosing cuboid
-  * r(i) = 1, n=1-100
-  * r(i) = i, n=1-100
-
-* min-Cube(Cube): cubes in smallest enclosing cube
-  * h(i) = 1, n=1-100
-  * h(i) = i, n=1-100
-
-* min-Cube(CubeAA): axis-aligned cubes in smallest enclosing cube
-  * h(i) = 1, n=1-100
-  * h(i) = i, n=1-100
-
-* min-Cuboid(Cuboid): cuboids in smallest cuboid
-  * h_4x3x2  "box":    hx(i)=i, hy(i)=0.75*i,  hz(i)=0.5*i,   n=2-100
-  * h_4x2x1  "brick":  hx(i)=i, hy(i)=0.5*i,   hz(i)=0.25*i,  n=2-100
-  * h_10x5x1 "plate":  hx(i)=i, hy(i)=0.5*i,   hz(i)=0.1*i,   n=2-100
-  * h_8x1x1  "pole":   hx(i)=i, hy(i)=0.125*i, hz(i)=0.125*i, n=2-100
-  * AM cuboid set 1: n=2-100
+|      | Container Type | Item Type       | Item Shape Distribution                | n       |                      |
+| ---- | -------------- | --------------- | -------------------------------------- | ------- | -------------------- |
+| min- | Sphere         | Sphere          | r(i) = 1                               | 1 - 100 |                      |
+| min- | Sphere         | Sphere          | r(i) = i                               | 1 - 100 |                      |
+| ---- | -------------- | --------------- | -------------------------------------- | ------- | -------------------- |
+| min- | Cube           | Sphere          | r(i) = 1                               | 1 - 100 |                      |
+| min- | Cube           | Sphere          | r(i) = i                               | 1 - 100 |                      |
+| ---- | -------------- | --------------- | -------------------------------------- | ------- | -------------------- |
+| min- | Cuboid         | Sphere          | r(i) = 1                               | 1 - 100 |                      |
+| min- | Cuboid         | Sphere          | r(i) = i                               | 1 - 100 |                      |
+| ---- | -------------- | --------------- | -------------------------------------- | ------- | -------------------- |
+| min- | Cube           | Cube            | h(i) = 1                               | 1 - 100 |                      |
+| min- | Cube           | Cube            | h(i) = i                               | 1 - 100 |                      |
+| ---- | -------------- | --------------- | -------------------------------------- | ------- | -------------------- |
+| min- | Cube           | CubeAA          | h(i) = 1                               | 1 - 100 |                      |
+| min- | Cube           | CubeAA          | h(i) = i                               | 1 - 100 |                      |
+| ---- | -------------- | --------------- | -------------------------------------- | ------- | -------------------- |
+| min- | Cuboid         | Cuboid          | hx(i)=i, hy(i)=0.75·i,  hz(i)=0.5·i    | 2 - 100 | "boxes" 4 x 3 x 2    |
+| min- | Cuboid         | Cuboid          | hx(i)=i, hy(i)=0.5·i,   hz(i)=0.25·i   | 2 - 100 | "bricks" 4 x 2 x 1   |
+| min- | Cuboid         | Cuboid          | hx(i)=i, hy(i)=0.5·i,   hz(i)=0.1·i    | 2 - 100 | "plates" 10 x 5 x 1  |
+| min- | Cuboid         | Cuboid          | hx(i)=i, hy(i)=0.125·i, hz(i)=0.125·i  | 2 - 100 | "poles" 8 x 1 x 1    |
+| min- | Cuboid         | Cuboid          | AM cuboid set 1                        | 2 - 100 |                      |
 
 
 ### 4D & 5D Benchmark Instances
 
-* min-Sphere4d(Sphere4d): 4d hyperspheres in smallest enclosing 4d hypersphere
-  * r(i) = i, n=10,20,30,40,50,100
-
-* min-Sphere5d(Sphere5d): 5d hyperspheres in smallest enclosing 5d hypersphere
-  * r(i) = i, n=10,20,30,40,50,100
+|      | Container Type | Item Type  | Item Shape Distribution  | n                    | 
+| ---- | -------------- | ---------- | ------------------------ | -------              | 
+| min- | Sphere4d       | Sphere4d   | r(i) = i                 | n=10,20,30,40,50,100 | 
+| min- | Sphere5d       | Sphere5d   | r(i) = i                 | n=10,20,30,40,50,100 | 
 
 
 
