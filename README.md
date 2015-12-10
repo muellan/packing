@@ -6,6 +6,18 @@ Some of the solutions are also listed on Eckard Specht's excellent website www.p
 
 You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
 
+See below for a list of all benchmarks, tables of all the symbols used, etc.
+
+
+#### Repository Structure
+```
+container_type 
+    scenario_type
+        {overview images}
+        {benchmark result lists}
+        item_shape_distribution
+            {result packing files}
+```
 
 #### Conventions
  * items : objects to be packed
