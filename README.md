@@ -2,7 +2,7 @@
 
 This repository contains my personal (putative/quasi-optimum) solutions for some selected packing problem benchmark instances.
 
-Some of the solutions are also listed on Eckard Specht's excellent website www.packomania.com. He has nice pictures, shortest tours of the items and a contact anlysis for each packing. Note that he uses a different file format and normalizes most of the container sizes to 1.
+Some of the solutions are also listed on Eckard Specht's excellent website www.packomania.com. He has nice pictures, shortest tours of the items and a contact analysis for each packing. Note that he uses a different file format and normalizes most of the container sizes to 1.
 
 You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
 
