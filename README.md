@@ -1,10 +1,10 @@
 # AM Packing Benchmarks
 
-This repository contains my personal (putative/quasi-optimum) solutions for some selected packing problem benchmark instances.
+This repository contains my personal (putative/quasi-optimum) solutions for many packing problem benchmark instances.
 
 Some of the solutions are also listed on Eckard Specht's excellent website www.packomania.com. He has nice pictures, shortest tours of the items and a contact analysis for each packing. Note that he uses a different file format and normalizes most of the container sizes to 1.
 
-You should also have a look on http://www2.stetson.edu/~efriedma/packing.html.
+You should also have a look at http://www2.stetson.edu/~efriedma/packing.html.
 
 See below for a list of all benchmarks, tables of all the symbols used, etc.
 
