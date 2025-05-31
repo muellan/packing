@@ -61,46 +61,46 @@ container_type
 
 ### 2D Benchmark Instances
 
-| Container Type    | Item Type       | Item Shape Distribution   | n       |                               |
-| ----------------- | --------------- | ------------------------- | ------- | ----------------------------- |
-| min-Circle        | Circle          | r(i) = 1                  | 1 - 600 |                               |
-| min-Circle        | Circle          | r(i) = i                  | 1 - 200 | "Al Zimmermann's contest set" |
-| min-Circle        | Circle          | r(i) = i ^ (+1/2)         | 5 - 100 |                               |
-| min-Circle        | Circle          | r(i) = i ^ (-1/2)         | 5 - 100 |                               |
-| min-Circle        | Circle          | r(i) = i ^ (-2/3)         | 5 - 100 |                               |
-| min-Circle        | Circle          | r(i) = i ^ (-1/5)         | 5 - 100 |                               |
-| min-Circle        | RegularTriangle | r(i) = 1                  | 2 - 100 |                               |
-| min-Circle        | RegularTriangle | r(i) = i                  | 2 - 100 |                               |
-| min-Circle        | RegularPentagon | r(i) = 1                  | 2 - 100 |                               |
-| min-Circle        | RegularPentagon | r(i) = i                  | 2 - 100 |                               |
-| min-Circle        | RegularHexagon  | r(i) = 1                  | 2 - 100 |                               |
-| min-Circle        | RegularHexagon  | r(i) = i                  | 2 - 100 |                               |
-| min-Circle        | RegularOctagon  | r(i) = 1                  | 2 - 100 |                               |
-| min-Circle        | RegularOctagon  | r(i) = i                  | 2 - 100 |                               |
-| min-Square        | Circle          | r(i) = 1                  | 1 - 100 |                               |
-| min-Square        | Circle          | r(i) = i                  | 1 - 100 |                               |
-| min-Square        | Circle          | r(i) = i ^ (+1/2)         | 5 - 100 |                               |
-| min-Square        | Circle          | r(i) = i ^ (-1/2)         | 5 - 100 |                               |
-| min-Square        | Square          | h(i) = 1                  | 1 - 100 |                               |
-| min-Square        | Square          | h(i) = i                  | 1 - 100 |                               |
-| min-Square        | RegularTriangle | r(i) = 1                  | 2 - 100 |                               |
-| min-Square        | RegularTriangle | r(i) = i                  | 2 - 100 |                               |
-| min-Square        | RegularPentagon | r(i) = 1                  | 2 - 100 |                               |
-| min-Square        | RegularPentagon | r(i) = i                  | 2 - 100 |                               |
-| min-Square        | RegularHexagon  | r(i) = 1                  | 2 - 100 |                               |
-| min-Square        | RegularHexagon  | r(i) = i                  | 2 - 100 |                               |
-| min-Square        | RegularOctagon  | r(i) = 1                  | 2 - 100 |                               |
-| min-Square        | RegularOctagon  | r(i) = i                  | 2 - 100 |                               |
-| min-Rectangle     | Circle          | r(i) = 1                  | 1 - 100 |                               |
-| min-Rectangle     | Circle          | r(i) = i                  | 1 - 100 |                               |
-| min-Rectangle     | RetangleAA      | hx(i)=i, hy(i)=0.750·i    | 1 - 100 |                               |
-| min-Rectangle     | RetangleAA      | hx(i)=i, hy(i)=0.500·i    | 1 - 100 |                               |
-| min-Rectangle     | RetangleAA      | hx(i)=i, hy(i)=0.250·i    | 1 - 100 |                               |
-| min-Rectangle     | RetangleAA      | hx(i)=i, hy(i)=0.125·i    | 1 - 100 |                               |
-| min-Rectangle     | Rectangle       | hx(i)=i, hy(i)=0.750·i    | 1 - 100 |                               |
-| min-Rectangle     | Rectangle       | hx(i)=i, hy(i)=0.500·i    | 1 - 100 |                               |
-| min-Rectangle     | Rectangle       | hx(i)=i, hy(i)=0.250·i    | 1 - 100 |                               |
-| min-Rectangle     | Rectangle       | hx(i)=i, hy(i)=0.125·i    | 1 - 100 |                               |
+| Container Type       | Item Type       | Item Shape Distribution   | n                                 |                               |
+| -------------------- | --------------- | ------------------------- | -------                           | ----------------------------- |
+| min-Circle           | Circle          | r(i) = 1                  | 1 - 600                           |                               |
+| min-Circle           | Circle          | r(i) = i                  | 1 - 200,300,400,600,800,1000,2000 | "Al Zimmermann's contest set" |
+| min-Circle           | Circle          | r(i) = i ^ (+1/2)         | 5 - 100                           |                               |
+| min-Circle           | Circle          | r(i) = i ^ (-1/2)         | 5 - 100                           |                               |
+| min-Circle           | Circle          | r(i) = i ^ (-2/3)         | 5 - 100                           |                               |
+| min-Circle           | Circle          | r(i) = i ^ (-1/5)         | 5 - 100                           |                               |
+| min-Circle           | RegularTriangle | r(i) = 1                  | 2 - 100                           |                               |
+| min-Circle           | RegularTriangle | r(i) = i                  | 2 - 100                           |                               |
+| min-Circle           | RegularPentagon | r(i) = 1                  | 2 - 100                           |                               |
+| min-Circle           | RegularPentagon | r(i) = i                  | 2 - 100                           |                               |
+| min-Circle           | RegularHexagon  | r(i) = 1                  | 2 - 100                           |                               |
+| min-Circle           | RegularHexagon  | r(i) = i                  | 2 - 100                           |                               |
+| min-Circle           | RegularOctagon  | r(i) = 1                  | 2 - 100                           |                               |
+| min-Circle           | RegularOctagon  | r(i) = i                  | 2 - 100                           |                               |
+| min-Square           | Circle          | r(i) = 1                  | 1 - 100                           |                               |
+| min-Square           | Circle          | r(i) = i                  | 1 - 100                           |                               |
+| min-Square           | Circle          | r(i) = i ^ (+1/2)         | 5 - 100                           |                               |
+| min-Square           | Circle          | r(i) = i ^ (-1/2)         | 5 - 100                           |                               |
+| min-Square           | Square          | h(i) = 1                  | 1 - 100                           |                               |
+| min-Square           | Square          | h(i) = i                  | 1 - 100                           |                               |
+| min-Square           | RegularTriangle | r(i) = 1                  | 2 - 100                           |                               |
+| min-Square           | RegularTriangle | r(i) = i                  | 2 - 100                           |                               |
+| min-Square           | RegularPentagon | r(i) = 1                  | 2 - 100                           |                               |
+| min-Square           | RegularPentagon | r(i) = i                  | 2 - 100                           |                               |
+| min-Square           | RegularHexagon  | r(i) = 1                  | 2 - 100                           |                               |
+| min-Square           | RegularHexagon  | r(i) = i                  | 2 - 100                           |                               |
+| min-Square           | RegularOctagon  | r(i) = 1                  | 2 - 100                           |                               |
+| min-Square           | RegularOctagon  | r(i) = i                  | 2 - 100                           |                               |
+| min-Rectangle        | Circle          | r(i) = 1                  | 1 - 100                           |                               |
+| min-Rectangle        | Circle          | r(i) = i                  | 1 - 100                           |                               |
+| min-Rectangle        | RetangleAA      | hx(i)=i, hy(i)=0.750·i    | 1 - 100                           |                               |
+| min-Rectangle        | RetangleAA      | hx(i)=i, hy(i)=0.500·i    | 1 - 100                           |                               |
+| min-Rectangle        | RetangleAA      | hx(i)=i, hy(i)=0.250·i    | 1 - 100                           |                               |
+| min-Rectangle        | RetangleAA      | hx(i)=i, hy(i)=0.125·i    | 1 - 100                           |                               |
+| min-Rectangle        | Rectangle       | hx(i)=i, hy(i)=0.750·i    | 1 - 100                           |                               |
+| min-Rectangle        | Rectangle       | hx(i)=i, hy(i)=0.500·i    | 1 - 100                           |                               |
+| min-Rectangle        | Rectangle       | hx(i)=i, hy(i)=0.250·i    | 1 - 100                           |                               |
+| min-Rectangle        | Rectangle       | hx(i)=i, hy(i)=0.125·i    | 1 - 100                           |                               |
 
 
 ### 3D Benchmark Instances
@@ -132,7 +132,6 @@ container_type
 | min-Sphere5d   | Sphere5d   | r(i) = i                 | 10, 20, 30, 40, 50, 100 | 
 
 
-
 ## File Format
 * the encoding is ASCII, multibyte characters must not be used
 * line endings are expected to be LF only
@@ -154,6 +153,8 @@ container_type
    ...
    <item n entity-specification>
 ```
+
+Syntax/filetype plugin for VIM is available at https://github.com/muellan/vim-filetype-pac.
 
 
 ### Packing Input File Format (.shp)
@@ -194,18 +195,17 @@ container_type
 
 
 #### Simple 2D Entity Types
-| type            | description                       | specification                  |
-| --------------- | ----------------------------      | ---------------                |
-| Circle          | circle                            | ```r```      ```x y```         |
-| SquareAA        | axis-aligned square               | ```h```      ```x y```         |
-| Square          | freely rotatable square           | ```h```      ```x y``` ```p``` |
-| RectangleAA     | axis-aligned rectangle            | ```hx hy```  ```x y```         |
-| Rectangle       | freely rotatable rectangle        | ```hx hy```  ```x y``` ```p``` |
-| RegularTriangle | freely rotatable regular triangle | ```r```      ```x y``` ```p``` |
-| RegularPentagon | freely rotatable regular pentagon | ```r```      ```x y``` ```p``` |
-| RegularHexagon  | freely rotatable regular hexagon  | ```r```      ```x y``` ```p``` |
-| RegularOctagon  | freely rotatable regular octagon  | ```r```      ```x y``` ```p``` |
-| Capsule2d       | rectangle with semicircular caps  | ```r h```    ```x y``` ```p``` |
+| type             | description                       | specification                  |
+| ---------------  | ----------------------------      | ---------------                |
+| Circle           | circle                            | ```r```      ```x y```         |
+| SquareAA         | axis-aligned square               | ```h```      ```x y```         |
+| Square           | freely rotatable square           | ```h```      ```x y``` ```p``` |
+| RectangleAA      | axis-aligned rectangle            | ```hx hy```  ```x y```         |
+| Rectangle        | freely rotatable rectangle        | ```hx hy```  ```x y``` ```p``` |
+| RegularTriangle  | freely rotatable regular triangle | ```r```      ```x y``` ```p``` |
+| RegularPentagon  | freely rotatable regular pentagon | ```r```      ```x y``` ```p``` |
+| RegularHexagon   | freely rotatable regular hexagon  | ```r```      ```x y``` ```p``` |
+| RegularOctagon   | freely rotatable regular octagon  | ```r```      ```x y``` ```p``` |
 
 #### Simple 3D Entity Types
 | type               | description                      | specification                                |
@@ -215,8 +215,6 @@ container_type
 | Cube               | freely rotatable cube            | ```h```        ```x y z``` ```qw qx qy qz``` |
 | CuboidAA           | axis-aligned cuboid              | ```hx hy hz``` ```x y z```                   |
 | Cuboid             | freely rotatable cuboid          | ```hx hy hz``` ```x y z``` ```qw qx qy qz``` |
-| RegularTetrahedron | regular tetrahedron              | ```r```        ```x y z``` ```qw qx qy qz``` |
-| Capsule            | cylinder with hemispherical caps | ```r h```      ```x y z``` ```qw qx qy qz``` |
 
 #### Simple Entity Types (more than 3 dimensions)
 | type            | description                  | specification           |
@@ -251,7 +249,6 @@ container_type
 | type              | description                          | specification                   |
 | ------------      | ----------------------------         | ---------------                 |
 | $file             | name of .shp file                    | ```filename```                  |
-| $file // $placing | name of .shp file and transformation | ```filename``` // ```placing``` |
   
 
 ### Examples
@@ -268,21 +265,6 @@ container_type
   1  1 3
   2  3 0
   3  -2 0
-  ```
-
-* A packing file that references 3 .shp files containing some polygons:
-  ```
-  #PACKING
-  #CONTAINER
-  RectangleAA
-  1
-  100 200 0 0
-  #CONTENT
-  $file // $placing
-  3
-  singlePolygon1.shp // -10.5 6.7  12.34
-  singlePolygon2.shp // 0.0 0.0    10
-  manyPolygons.shp   // 12.4 -23   270
   ```
 
 * A .shp file specifying two 4-sided polygons:
