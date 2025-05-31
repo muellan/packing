@@ -4,7 +4,7 @@ This repository contains my personal (putative/quasi-optimum) solutions for many
 
 Some of the solutions are also listed on Eckard Specht's excellent website www.packomania.com. He has nice pictures, shortest tours of the items and a contact analysis for each packing. Note that he uses a different file format and normalizes most of the container sizes to 1.
 
-You should also have a look at http://www2.stetson.edu/~efriedma/packing.html.
+You should also have a look at https://erich-friedman.github.io/packing/index.html.
 
 See below for a list of all benchmarks, tables of all the symbols used, etc.
 
