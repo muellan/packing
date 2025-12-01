@@ -2,11 +2,19 @@
 
 This repository contains my personal (putative/quasi-optimum) solutions for many packing problem benchmark instances.
 
-Some of the solutions are also listed on Eckard Specht's excellent website www.packomania.com. He has nice pictures, shortest tours of the items and a contact analysis for each packing. Note that he uses a different file format and normalizes most of the container sizes to 1.
+See the [inventory list](#inventory) below for an overview of all benchmarks, tables, symbols used, etc.
 
-You should also have a look at https://erich-friedman.github.io/packing/index.html.
 
-See below for a list of all benchmarks, tables of all the symbols used, etc.
+#### Packing-Related Links
+ * [Eckard Specht's excellent packing benchmarks site](http://www.packomania.com): 
+   Lots of nice pictures, shortest tours of the items and a contact analysis for each packing;
+   uses a different file format and normalizes most of the container sizes to 1.
+   Some of my solutions are also listed there.
+
+ * [Erich's Packing Center](https://erich-friedman.github.io/packing/index.html)
+
+ * [an industrial application of circle packing with constraints](https://optunum.com/umbilay/overview)
+
 
 
 #### Repository Structure
@@ -34,6 +42,7 @@ container_type
    "min-ContainerType(ItemType)"
  * find legal arrangement of items in a rigid container:
    "ContainerType(ItemType)"
+
 
 
 
@@ -132,10 +141,14 @@ container_type
 | min-Sphere5d   | Sphere5d   | r(i) = i                 | 10, 20, 30, 40, 50, 100 | 
 
 
-## File Format
+
+
+## PAC File Format
 * the encoding is ASCII, multibyte characters must not be used
 * line endings are expected to be LF only
 * whitespace apart from LF does not have any semantic meaning other than separating numbers or identifier texts
+* [syntax/filetype plugin for VIM](https://github.com/muellan/vim-filetype-pac).
+
 
 
 ### Packing File Format (.pac)
@@ -154,10 +167,8 @@ container_type
    <item n entity-specification>
 ```
 
-Syntax/filetype plugin for VIM is available at https://github.com/muellan/vim-filetype-pac.
 
-
-### Packing Input File Format (.shp)
+### Shape File Format (.shp)
 ```
 <entity-type>
 <number of entities n>
@@ -250,6 +261,7 @@ Syntax/filetype plugin for VIM is available at https://github.com/muellan/vim-fi
 | ------------      | ----------------------------         | ---------------                 |
 | $file             | name of .shp file                    | ```filename```                  |
   
+
 
 ### Examples
 * A packing solution file for the min-Circle(Circle) problem:
