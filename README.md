@@ -13,6 +13,10 @@ See the [inventory list](#inventory) below for an overview of all benchmarks, ta
 
  * [Erich's Packing Center](https://erich-friedman.github.io/packing/index.html)
 
+ * [Packrift Packaging Optimization Benchmark Corpus](https://packrift.github.io/packaging-optimization-benchmark-corpus/):
+   SKU-specific ecommerce packaging benchmark pages for dimensional-weight checks,
+   carton-fit boundaries, cube utilization, and warehouse packaging planning scenarios.
+
  * [an industrial application of circle packing with constraints](https://optunum.com/umbilay/overview)
 
 
@@ -296,4 +300,3 @@ container_type
   5.0 0.0
     -12.2 4.5
   ```
-
