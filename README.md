@@ -14,13 +14,13 @@ See the [inventory list](#inventory) below for an overview of all benchmarks, ta
  * [Erich's Packing Center](https://erich-friedman.github.io/packing/index.html)
 
  * [The Square Packing Problem](https://jlevy.github.io/squares):
-   Dedicated to packing identical sqaures into the smallest square with an
+   Dedicated to packing identical squares into the smallest square with an
    overview of the current state of the art and beautiful visualizations.
 
  * [Square Packing Atlas](https://evand.github.io/square-packing/)
 
  * [An industrial application of circle packing with constraints](https://optunum.com/umbilay/overview):
-   CAD software for designing subsea cables that optimizes cable diameter, symmetry and mass density.
+   CAD software for designing cables that optimizes cable diameter, symmetry and mass density.
 
 
 
